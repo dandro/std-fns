@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
+exports.default = void 0;
 
 /**
  * Map over the value of a promise. The function provided should return another Promise.
@@ -15,4 +15,5 @@ function fmap(fn, p) {
   return p.then(fn);
 }
 
-exports.default = fmap;
+var _default = fmap;
+exports.default = _default;

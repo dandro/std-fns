@@ -1,11 +1,11 @@
 {
   "presets": [
-    "flow",
+    "@babel/preset-flow",
     [
-      "env",
+      "@babel/preset-env",
       {
         "targets": {
-          "node": "8.3.0"
+          "node": "10.16.0"
         }
       }
     ]

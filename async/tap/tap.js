@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
+exports.default = void 0;
 
 /**
  * Create a side effect from the value of a promise. The tap function is only called if the promise is resolved.
@@ -16,4 +16,5 @@ function tap(fn, p) {
   return p;
 }
 
-exports.default = tap;
+var _default = tap;
+exports.default = _default;

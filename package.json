@@ -6,23 +6,32 @@
   "repository": "https://github.com/dandro/std-fns",
   "author": "dnlmrtnz",
   "license": "MIT",
+  "engines": {
+    "node": ">=10.16.0",
+    "npm": ">=6.10.1"
+  },
   "scripts": {
     "test": "jest ./src",
     "check": "eslint ./src && flow ./src",
-    "build": "npm run check && babel src/ -d ./ --ignore **/*spec.js && npm run build:docs && npm run build:types",
+    "build": "npm run check && npm run build:js && npm run build:docs && npm run build:types",
+    "build:js": "babel src/ --out-dir ./ --ignore src/**/*.spec.js",
     "build:types": "flow-copy-source -v -i **/*spec.js src ./",
     "build:docs": "node ./scripts/docs"
   },
   "devDependencies": {
-    "babel-cli": "6.26.0",
-    "babel-eslint": "8.2.3",
-    "babel-preset-env": "1.7.0",
-    "babel-preset-flow": "6.23.0",
-    "eslint": "5.2.0",
-    "eslint-plugin-flowtype": "2.47.1",
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.4.2",
+    "eslint": "^6.0.1",
+    "eslint-plugin-flowtype": "^3.11.1",
     "flow-bin": "0.72.0",
-    "flow-copy-source": "^2.0.2",
-    "jest": "22.4.4",
-    "jsdoc-to-markdown": "^4.0.1"
-  }
+    "flow-copy-source": "^2.0.7",
+    "jest": "^24.8.0",
+    "jsdoc-to-markdown": "^5.0.0"
+  },
+  "dependencies": {}
 }

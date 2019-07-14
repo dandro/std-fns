@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
+exports.default = void 0;
 
 /**
  * Map over the success or error of a promise.
@@ -16,4 +16,5 @@ function bimap(leftFn, rightFn, p) {
   return p.then(rightFn, e => Promise.reject(leftFn(e)));
 }
 
-exports.default = bimap;
+var _default = bimap;
+exports.default = _default;

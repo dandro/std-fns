@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
+exports.default = void 0;
 
 /**
  * Decrement a number by one.
@@ -14,4 +14,5 @@ function dec(num) {
   return num - 1;
 }
 
-exports.default = dec;
+var _default = dec;
+exports.default = _default;

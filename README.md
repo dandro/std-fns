@@ -233,8 +233,7 @@ Call instance method of an object.
 <a name="negate"></a>
 
 ## negate(fn) ⇒ <code>function</code>
-Creates a function which negates the value of the result.
-Works like the ! operator on the result of the function provided
+Creates a function which negates the value of the result.Works like the ! operator on the result of the function provided
 
 **Kind**: global function  
 

@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
+exports.default = void 0;
 
 /**
  * Compose a function from all functions passed as arguments from left to right.
@@ -16,4 +16,5 @@ function compose(...fns) {
   };
 }
 
-exports.default = compose;
+var _default = compose;
+exports.default = _default;

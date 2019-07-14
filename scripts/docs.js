@@ -10,7 +10,7 @@ jsdoc2md
     ]
   })
   .then((docs) => {
-    fs.writeFile(
+    fs.writeFileSync(
       'README.md',
       `# std-fns
 Standard Functions is a library aimed to fill in the gaps in the JS standard library. The library follows, or aims to follow, functional programming methodologies. Even though stable it is not very useful at the moment, so use at your own risk.
@@ -24,7 +24,6 @@ ${docs}
 - Add data structures.
 - Add algebraic types.
 - Add Flow library definition to the flow-typed project.
-`
-    )
+`);
   })
   .catch(console.error);

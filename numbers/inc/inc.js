@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
+exports.default = void 0;
 
 /**
  * Increment a number by one.
@@ -14,4 +14,5 @@ function inc(num) {
   return num + 1;
 }
 
-exports.default = inc;
+var _default = inc;
+exports.default = _default;

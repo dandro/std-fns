@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
+exports.default = void 0;
 
 /**
  * Creates a function which negates the value of the result.
@@ -17,4 +17,5 @@ function negate(fn) {
   };
 }
 
-exports.default = negate;
+var _default = negate;
+exports.default = _default;

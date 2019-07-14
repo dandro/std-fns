@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
+exports.default = void 0;
 
 /**
  * Partially apply arguments to a function from right to left.
@@ -17,4 +17,5 @@ function partialRight(fn, ...outerArgs) {
   };
 }
 
-exports.default = partialRight;
+var _default = partialRight;
+exports.default = _default;

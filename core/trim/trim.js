@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
+exports.default = void 0;
 
 /**
  * Trims a string. Works like the string trim method.
@@ -14,4 +14,5 @@ function trim(val) {
   return String.prototype.trim.call(val);
 }
 
-exports.default = trim;
+var _default = trim;
+exports.default = _default;

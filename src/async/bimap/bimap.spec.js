@@ -3,7 +3,7 @@
 import bimap from './bimap';
 
 describe('async/bimap', () => {
-  test('should only call leftFn if promise rejects', (done: Function): Promise<any> => {
+  test('should only call leftFn if promise rejects', (done: Function): any => {
     const expected: Error = new Error('error');
     const leftFn: Function = jest.fn().mockImplementation((v: number): Error => expected);
     const rightFn: Function = jest.fn();
@@ -20,7 +20,7 @@ describe('async/bimap', () => {
       });
   });
 
-  test('should only call rightFn if promise resolves', (done: Function): Promise<any> => {
+  test('should only call rightFn if promise resolves', (done: Function): any => {
     const expected: number = 6;
     const leftFn: Function = jest.fn();
     const rightFn: Function = jest.fn().mockImplementation((v: number): number => expected);

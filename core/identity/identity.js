@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
+exports.default = void 0;
 
 /**
  * Pass a value to a function which returns said value.
@@ -14,4 +14,5 @@ function identity(val) {
   return val;
 }
 
-exports.default = identity;
+var _default = identity;
+exports.default = _default;

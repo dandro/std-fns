@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
+exports.default = void 0;
 
 /**
  * Short for left map, map over the error, or catch, of a promise. The function will only be called if the promise provided has fail.
@@ -15,4 +15,5 @@ function lmap(fn, p) {
   return p.catch(fn);
 }
 
-exports.default = lmap;
+var _default = lmap;
+exports.default = _default;

@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
+exports.default = void 0;
 
 /**
  * Creates a function which always returns the same value.
@@ -16,4 +16,5 @@ function always(val) {
   };
 }
 
-exports.default = always;
+var _default = always;
+exports.default = _default;

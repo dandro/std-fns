@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
+exports.default = void 0;
 
 /**
  * Map over the value of a promise. The map function will only be called if the promise is resolved.
@@ -15,4 +15,5 @@ function map(fn, p) {
   return p.then(fn);
 }
 
-exports.default = map;
+var _default = map;
+exports.default = _default;

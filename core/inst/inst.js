@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
+exports.default = void 0;
 
 /**
  * Call instance method of an object.
@@ -16,4 +16,5 @@ function inst(methodName, val) {
   return typeof fn === 'function' ? fn.call(val) : null;
 }
 
-exports.default = inst;
+var _default = inst;
+exports.default = _default;
