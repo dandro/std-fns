@@ -5,7 +5,7 @@
  * @param args {Array<mixed>}
  * @returns {*}
  */
-function and(...args: Array<mixed>): any {
+function and(...args: $ReadOnlyArray<mixed>): any {
   if (args.length === 1) return args[0];
   return args[0] && and(...args.slice(1));
 }

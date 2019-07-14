@@ -33,7 +33,7 @@ Standard Functions is a library aimed to fill in the gaps in the JS standard lib
 <dt><a href="#composeRight">composeRight(...fns)</a> ⇒ <code>function</code></dt>
 <dd><p>Compose a function from all functions passed as arguments from right to left.</p>
 </dd>
-<dt><a href="#curry">curry(fn, ...initialArgs)</a> ⇒ <code>function</code></dt>
+<dt><a href="#bicurry">bicurry(fn, ...initialArgs)</a> ⇒ <code>function</code></dt>
 <dd><p>Curry a function taking arguments from left to right. The constructor function accepts multiple value arguments. Returned functions also accept multiple arguments.</p>
 </dd>
 <dt><a href="#curryRight">curryRight(fn, ...initialArgs)</a> ⇒ <code>function</code></dt>
@@ -183,9 +183,9 @@ Compose a function from all functions passed as arguments from right to left.
 | --- | --- |
 | ...fns | <code>function</code> | 
 
-<a name="curry"></a>
+<a name="bicurry"></a>
 
-## curry(fn, ...initialArgs) ⇒ <code>function</code>
+## bicurry(fn, ...initialArgs) ⇒ <code>function</code>
 Curry a function taking arguments from left to right. The constructor function accepts multiple value arguments. Returned functions also accept multiple arguments.
 
 **Kind**: global function  
@@ -233,7 +233,8 @@ Call instance method of an object.
 <a name="negate"></a>
 
 ## negate(fn) ⇒ <code>function</code>
-Creates a function which negates the value of the result.Works like the ! operator on the result of the function provided
+Creates a function which negates the value of the result.
+Works like the ! operator on the result of the function provided
 
 **Kind**: global function  
 

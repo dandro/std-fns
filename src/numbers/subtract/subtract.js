@@ -5,6 +5,7 @@
  * @param numbers {Array<number>} - Comma separated list of values.
  * @returns {number}
  */
+
 function subtract(...numbers: Array<number>): number {
   return numbers.reduce((result: number, val: number): number => result - val);
 }
